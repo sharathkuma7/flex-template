@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/ac42c3b1f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .main-nav{
+            width: 100%;
+            background-color: aqua;
+            padding: 15px;
+            display: flex; 
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            text-indent: 15px;
+            position: fixed;
+        }
+        .email{
+            margin-right: 30px;
+        }
+        .card-container{
+            padding-top: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 100vh;
+            margin-bottom: 20px;
+        }
+        img{
+            width: 280px;
+        }
+        .card-title{
+            text-align: justify;
+            text-align-last: center;
+        }
+        .card-description{
+            text-align: justify;
+            text-align-last: center;
+           
+        }
+        p{
+            line-height: 15px;
+        }
+        .card{
+            width: 280px;
+            margin: 10px ;
+        }
+       .about_me{
+        text-align: center;
+        border-top: 1px solid rgb(221, 216, 216);
+        margin-bottom: 40px;
+
+       }
+       .about_img>img{
+        width: 50%;
+       }
+       .about_img>h1{
+        margin: 30px;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+
+       /*******************Footer*********************/
+       .footer-container{
+        display: grid;
+        grid-template-columns: repeat(3,400px);
+        justify-content: center;
+        padding: 20px;
+        border-top: 1px solid rgb(240, 231, 231);
+       }
+       
+       .footer-img>div>img{
+        width: 50px;
+       }
+
+       .button{
+        border: none;
+        padding: 5px 5px;
+        width: 60px;
+        font-size: 10px;
+        margin: 5px;
+        background-color: rgb(85, 88, 90);
+        color: white;
+       }
+       .footer-card{
+        display: flex;
+        text-indent: 5px;
+       }
+       .footer-img{
+        padding: 10px;
+       }
+       .footer-img:hover{
+        background-color: gray;
+       }
+    </style>
+</head>
+<body>
+    <!-----------------Navigation-Start---------------------->
+    <nav class="main-nav">
+        <i class="fa-solid fa-bars"></i>
+        <a>My Food</a>
+        <a class="email">Mail</a>
+    </nav>
+        <!-------------Navigation-End---------------------->
+
+    <!---------------Card-Container-Start------------>  
+    <div class="card-container">
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg">
+           
+                <h3 class="card-title">The Perfect Sandwich, A Real NYC Classic</h3>
+            
+            
+                <p class="card-description">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+           
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/steak.jpg">
+            
+                <h3 class="card-title">Let Me Tell You About This Steak</h3>
+            
+                <p class="card-description">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" class="image">
+            
+                <h3 class="card-title">Cherries, interrupted</h3>
+            
+                <p class="card-description">Lorem ipsum text praesent tincidunt ipsum lipsum.
+
+                    What else?</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/wine.jpg">
+            
+                <h3 class="card-title">Once Again, Robust Wine and Vegetable Pasta</h3>
+            
+                <p class="card-description">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/popsicle.jpg">
+           
+                <h3 class="card-title">All I Need Is a Popsicle</h3>
+            
+            
+                <p class="card-description">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+           
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/salmon.jpg">
+            
+                <h3 class="card-title">Salmon For Your Skin</h3>
+            
+                <p class="card-description">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" class="image">
+            
+                <h3 class="card-title">The Perfect Sandwich, A Real Classic</h3>
+            
+                <p class="card-description">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/croissant.jpg">
+            
+                <h3 class="card-title">Le French</h3>
+            
+                <p class="card-description">Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+    </div>
+   <!---------------Card-Container-Start------------>  
+
+
+    <!-----------------------About-Me-Start----------------------->
+    <div class="about_me">
+        <div class="about_img">
+            <h1>About Me, The Food Man</h1>
+            <img src="https://www.w3schools.com/w3images/chef.jpg">
+            <h2>I am Who I Am!</h2>
+            <p>With Passion For Real, Good Food</p>
+            <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla</p>
+        </div>
+    </div>
+    <!-----------------------About-Me-End----------------------->
+
+
+
+    <!------------------------Footer-Start----------------------->
+    <div class="footer-container">
+        <div class="footer-title">
+            <h2>Footer</h2>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, 
+                porta lectus vitae, ultricies congue gravida diam non fringilla.
+            </p>
+            <p>Powered By <a href="">w3.css</a></p>
+        </div>
+
+       
+
+        <div>
+            <h2>BLOG POSTS</h2>
+            <div class="footer-container-img">
+                <div class="footer-img">
+                    <div class="footer-card">
+                        <img src="https://www.w3schools.com/w3images/workshop.jpg">
+                    
+                        <p>Lorem
+                            Sed mattis nunc
+                        </p>
+                    </div>
+                </div>
+             
+                <hr>
+             
+                <div class="footer-img">
+                    <div class="footer-card">
+                        <img src="https://www.w3schools.com/w3images/gondol.jpg">
+                    
+                        <p>Lorem
+                            Sed mattis nunc
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-tags">
+            <h2>POPULAR TAGS</h2>
+            <div class="button-tags">
+                <button class="button">Travel</button>
+                <button class="button">New York</button>
+                <button class="button">Dinner</button>
+                <button class="button">Salmon</button>
+                <button class="button">France</button>
+                <button class="button">Drinks</button>
+                <button class="button">Ideas</button>
+                <button class="button">Flavors</button>
+                <button class="button">Cuisine</button>
+                <button class="button">Chicken</button>
+                <button class="button">Dressing</button>
+                <button class="button">Fried</button>
+                <button class="button">Fish</button>
+                <button class="button">Duck</button>
+            </div>
+        </div>
+    </div>
+    <!-------------------------Footer-Part-End--------------------->
+   
+</body>
+</html>
